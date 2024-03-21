@@ -1,0 +1,15 @@
+<div class="container">
+    <input type="file" #fileInput style="display:none " (change)="onFileSelected($event)" id="fileInput">
+    <input type="text" [value]="selectedFileName" placeholder="Choose your file">
+    <button (click)="fileInput.click()">Select File</button>
+    <button (click)="openFile()">Open</button>
+</div>
+<!-- <button id="downloadPdfButton">Download PDF</button> -->
+<!-- <div *ngIf="selectedFileName">{{ selectedFileName }}</div> -->
+<div *ngIf="fileContent">
+  <hr>
+  {{ selectedFileName }}
+  <textarea readonly cols="256" rows="30">{{ fileContent }}</textarea>
+  <!-- <pre>{{ fileContent }}</pre> -->
+</div>
+
