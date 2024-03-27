@@ -68,6 +68,8 @@ export class VerifyDemandTableComponent implements OnInit {
     { data: 'section', title: 'SECTION', width: 80 },
     { data: 'typeOfWork', title: 'TYPE OF WORK', width: 120 },
     { data: 'machine', title: 'MACHINE TYPE', width: 120 },
+    { data: 'time_granted', title: 'TIME GRANTED', width: 120 },
+    { data: 'output', title: 'OUTPUT', width: 120 },
     { data: 'quantum', title: 'QUANTUM', width: 120 },
     
     { data: 'avl_start', title: 'SLOT START', width: 100 },
@@ -134,9 +136,8 @@ export class VerifyDemandTableComponent implements OnInit {
       selectOptions: ['Pending', 'Granted', 'Not Granted'],
       width: 120,
     },
-    { data: 'time_granted', title: 'TIME GRANTED', width: 120 },
+
     { data: 'slots', title: 'SLOTS', width: 120 },
-    { data: 'output', title: 'OUTPUT', width: 120 },
     { data: 'OPTG_remarks', title: 'OPTG Remarks', width: 120 },
     { data: 'rollfrom', title: 'ROLL FROM', width: 100 },
     {

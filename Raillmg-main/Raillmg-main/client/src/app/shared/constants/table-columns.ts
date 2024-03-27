@@ -140,6 +140,8 @@ export const columns: Handsontable.ColumnSettings[] = [
     width: 150,
   },
   { data: 'series', title: 'SERIES', width: 80 },
+  { data: 'time_granted', title: 'TIME GRANTED', width: 120 },
+  { data: 'output', title: 'OUTPUT', width: 100 },
   { data: 'quantum', title: 'QUANTUM', width: 100 },
   { data: 'avl_start', title: ' SLOT START', width: 100 },
   { data: 'avl_end', title: ' SLOT END', width: 90 },
@@ -253,9 +255,8 @@ export const columns: Handsontable.ColumnSettings[] = [
     width: 160,
     
   },
-  { data: 'time_granted', title: 'TIME GRANTED', width: 120 },
+  
   { data: 'slot', title: 'SLOTS', width: 70 },
-  { data: 'output', title: 'OUTPUT', width: 100 },
   { data: 'OPTG_remarks', title: 'OPTG REMARKS', width: 120 },
   {
     data: 'logs',

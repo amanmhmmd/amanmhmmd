@@ -59,40 +59,51 @@
             </li>
           </ul>
         </li> -->
-        <!-- <li class="nav-item dropdown">
+         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Reports
           </a>
           <ul class="dropdown-menu">
             <li>
               <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                [routerLink]="['report', 'machineRolls']">Machine Roll</a>
+                [routerLink]="['report', 'machineRolls']">Machine Rolls</a>
             </li>
             <li>
               <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 [routerLink]="['report', 'machineNonRolls']">Machine
-                Non-Rolling</a>
+                (Out Of Rolling Block)</a>
             </li>
             <li>
               <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                [routerLink]="['report', 'maintenanceRolls']">maintenance
-                Roll</a>
+                [routerLink]="['report', 'maintenanceRolls']">
+                Maintenance
+                Rolls</a>
             </li>
             <li>
               <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                [routerLink]="['report', 'maintenanceNonRolls']">maintenance
-                Non-Roll</a>
+                [routerLink]="['report', 'maintenanceNonRolls']">Maintenance
+                (Out Of Rolling Block)</a>
             </li>
             <li>
+              <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                [routerLink]="['report','all-rolling']">All Rolling
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                [routerLink]="['report','all-non-rolling']">All Non Rolling</a>
+            </li>
+
+            <!-- <li>
               <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Block summary</a>
-            </li>
+            </li> -->
           </ul>
-        </li> -->
-        <li class="nav-item">
+        </li>
+        <!-- <li class="nav-item">
           <a class="nav-link active" role="button" [routerLink]="['report']">
             Report
           </a>
-        </li>
+        </li> -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Edit
@@ -118,7 +129,7 @@
           </ul>
         </li>
         <li>
-          <a class="nav-link active" role="button">
+          <a class="nav-link active" role="button"[routerLink]="['analytics']">
             Analytics
           </a>
         </li>
